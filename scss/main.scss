@@ -59,6 +59,7 @@
       color: $color_1;
       background-color: $background-color_1;
       a {
+        font-size: 1.2rem;
         font-weight: 600;
         letter-spacing: 0.2rem;
         text-decoration: none;
@@ -106,14 +107,14 @@
 
 .home-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 1fr 0.2fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "header header"
-    "maincontent maincontent"
-    "mainFooder mainFooder";
+    "header"
+    "maincontent"
+    "mainFooder";
 }
 .header-home {
   grid-area: header;
@@ -187,6 +188,9 @@
   height: 100vh;
   font-size: 2rem;
   color: $color_1;
+  h2{
+    text-align: center;
+  }
 }
 .mainFooder {
   grid-area: mainFooder;
@@ -216,7 +220,7 @@
   .sign-up {
     grid-area: sign-up;
     max-width: 68.75rem;
-    max-height: 30rem;
+    min-height: 39rem;
     margin: 2rem;
     background-color: #f2f2f2;
     form {
@@ -244,7 +248,7 @@
         margin: 2rem 0;
 
         #email {
-          min-width: 20rem;
+          min-width: 18rem;
           margin-bottom: 2rem;
           background: #fdfcfb;
           font-family: inherit;
@@ -274,10 +278,18 @@
           outline: none;
         }
       }
+      p{
+        text-align: center
+        ;
+      }
     }
   }
   .main-about-me {
     grid-area: main-about-me;
+    margin-left: 2rem;
+    h2 {
+      font-weight: 200;
+    }
   }
   .main-about-me-my-image {
     grid-area: main-about-me-my-image;

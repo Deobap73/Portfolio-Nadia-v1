@@ -66,6 +66,8 @@
 
     .sign-up {
       margin-left: 15rem;
+      min-height: 20rem;
+      max-height: 30rem;
       form {
         .sign-up-description {
           margin: 1.4em 3em;
@@ -85,6 +87,7 @@
     .main-about-me {
       grid-area: main-about-me;
       margin-left: 15rem;
+      margin-right: 2rem;
       h2 {
         font-weight: 200;
       }
