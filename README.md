@@ -12,7 +12,7 @@ First training project in WEB Development, at the Digital Career Institute - DCI
 - - - Portfolio (images)
 - The page is responsive but will be improved.
 
-## PROGRAMMING LANGUAGES USED
+## PROGRAMMING LINGUAGES USED
 - HTML
 - SASS
 
