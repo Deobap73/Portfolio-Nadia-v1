@@ -18,41 +18,43 @@
       margin-top: 5rem;
     }
   }
-  .home-container {
-    grid-template-rows: 0.1fr 1fr 0.1fr;
-    .header-home {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas: "signature nav";
-      grid-area: header;
-      .signature {
-        align-items: flex-start;
-        margin-left: 15rem;
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "signature nav";
+    grid-area: header;
+    .signature {
+      align-items: flex-start;
+      margin-left: 6%;
+      font-size: 1.5em;
+    }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 6%;
+      font-size: 1.5em;
+      .dropbtn {
+        display: none;
       }
-      .nav {
+      .menu {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        margin-right: 15rem;
-        font-size: 2rem;
-        .dropbtn {
-          display: none;
-        }
-        .menu {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-evenly;
-        }
+        align-items: center;
+        justify-content: space-evenly;
       }
     }
+  }
+  .home-container {
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+
     .maincontent {
       align-items: flex-start;
-      margin: 2.5rem 20rem;
-      font-size: 4rem;
+      margin: 2.5rem 10%;
+      font-size: 4em;
       height: 125rem;
       h2 {
         margin-top: 35rem;
@@ -81,16 +83,21 @@
       "mainFooder mainFooder";
 
     .sign-up {
-      margin-left: 15rem;
+      .sign-up-header {
+        margin: 1em 1.4em;
+      }
+      margin-left: 8%;
+      margin-right: 2%;
       min-height: 20rem;
       max-height: 30rem;
       form {
         .sign-up-description {
-          margin: 1.4em 3em;
+          margin: 1.2% 2%;
         }
         .sign-up-input {
           align-items: flex-start;
           #email {
+            width: 95%;
             height: 3em;
           }
           #submit {
@@ -102,8 +109,8 @@
 
     .main-about-me {
       grid-area: main-about-me;
-      margin-left: 15rem;
-      margin-right: 2rem;
+      margin-left: 8%;
+      margin-right: 2%;
       h2 {
         font-weight: 200;
       }
@@ -111,7 +118,7 @@
     .main-about-me-my-image {
       grid-area: main-about-me-my-image;
       overflow: hidden;
-      margin-right: 15rem;
+      margin-right: 8%;
     }
   }
   // Portfolio style page
@@ -210,11 +217,27 @@
 
     .main-specs {
       grid-area: main-specs;
+      margin-left: 10%;
+      .specs-1,
+      .specs-2 {
+        font-size: 3em;
+        margin-top: 2em;
+        padding-bottom: 0.5em;
+      }
+      pre {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+      }
+      .image-mobile-1,
+      .image-mobile-2 {
+        display: none;
+      }
     }
     .specs-image {
       grid-area: specs-image;
       overflow: hidden;
       margin: 2rem;
+      display: block;
       img {
         width: 100%;
         height: 100%;
@@ -241,40 +264,41 @@
       margin-top: 5rem;
     }
   }
-  .home-container {
-    grid-template-rows: 0.1fr 1fr 0.1fr;
-    .header-home {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas: "signature nav";
-      grid-area: header;
-      .signature {
-        align-items: flex-start;
-        margin-left: 15rem;
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "signature nav";
+    grid-area: header;
+    .signature {
+      align-items: flex-start;
+      margin-left: 8%;
+    }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 8%;
+      font-size: 2rem;
+      .dropbtn {
+        display: none;
       }
-      .nav {
+      .menu {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        margin-right: 15rem;
-        font-size: 2rem;
-        .dropbtn {
-          display: none;
-        }
-        .menu {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-evenly;
-        }
+        align-items: center;
+        justify-content: space-evenly;
       }
     }
+  }
+  .home-container {
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+
     .maincontent {
       align-items: flex-start;
-      margin: 2.5rem 20rem;
+      margin: 2.5rem 10%;
       font-size: 4rem;
       height: 125rem;
       h2 {
@@ -296,7 +320,7 @@
 
   .about-me-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.8fr 1fr 0.1fr;
     grid-template-areas:
       "header header"
       "sign-up main-about-me-my-image"
@@ -304,9 +328,13 @@
       "mainFooder mainFooder";
 
     .sign-up {
-      margin-left: 15rem;
-      min-height: 20rem;
-      max-height: 30rem;
+      .sign-up-header {
+        margin: 1em 1.4em;
+      }
+      margin-left: 10%;
+      margin-right: 2%;
+      min-height: 31rem;
+      max-height: 40rem;
       form {
         .sign-up-description {
           margin: 1.4em 3em;
@@ -325,8 +353,8 @@
 
     .main-about-me {
       grid-area: main-about-me;
-      margin-left: 15rem;
-      margin-right: 2rem;
+      margin-left: 10%;
+      margin-right: 2%;
       h2 {
         font-weight: 200;
       }
@@ -334,7 +362,7 @@
     .main-about-me-my-image {
       grid-area: main-about-me-my-image;
       overflow: hidden;
-      margin-right: 15rem;
+      margin-right: 10%;
     }
   }
   // Portfolio style page
@@ -433,11 +461,27 @@
 
     .main-specs {
       grid-area: main-specs;
+      margin-left: 10%;
+      .specs-1,
+      .specs-2 {
+        font-size: 3em;
+        margin-top: 2em;
+        padding-bottom: 0.5em;
+      }
+      pre {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+      }
+    }
+    .image-mobile-1,
+    .image-mobile-2 {
+      display: none;
     }
     .specs-image {
       grid-area: specs-image;
       overflow: hidden;
       margin: 2rem;
+      display: block;
       img {
         width: 100%;
         height: 100%;

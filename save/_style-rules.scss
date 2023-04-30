@@ -4,9 +4,9 @@
 @media screen and (max-width: 768px) {
   .home-container {
     display: grid;
-    grid-template-rows: 0.5fr 1fr .2fr;
+    grid-template-rows: 0.5fr 1fr 0.2fr;
   }
-  .header-home {
+  .main-header {
     display: grid;
     grid-template-columns: 0.8fr 0.5fr;
     grid-template-rows: 0.5fr;
@@ -68,10 +68,10 @@
   align-items: center;
   margin: 2rem;
   h2 {
-        color: $color_1;
+    color: $color_1;
     font-size: 3rem;
   }
 }
-.mainFooder{
-    margin-top: 8rem;
+.mainFooder {
+  margin-top: 8rem;
 }

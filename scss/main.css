@@ -121,15 +121,7 @@
   text-align: center;
 }
 
-.home-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr 0.2fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "header" "maincontent" "mainFooder";
-}
-.home-container .header-home {
+.main-header {
   grid-area: header;
   display: grid;
   grid-template-columns: 0.1fr 0.1fr;
@@ -138,7 +130,7 @@
   grid-auto-flow: column;
   grid-template-areas: "nav" "signature";
 }
-.home-container .header-home .signature {
+.main-header .signature {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,10 +138,10 @@
   font-size: 2rem;
   height: 15vh;
 }
-.home-container .header-home .nav {
+.main-header .nav {
   grid-area: nav;
 }
-.home-container .header-home .nav .dropbtn {
+.main-header .nav .dropbtn {
   background-color: #d4d4d3;
   color: white;
   font-size: 16px;
@@ -159,34 +151,42 @@
   cursor: pointer;
   font-size: 3rem;
 }
-.home-container .header-home .nav .menu {
+.main-header .nav .menu {
   display: none;
   flex-direction: column;
   align-items: center;
 }
-.home-container .header-home .nav .menu li {
+.main-header .nav .menu li {
   padding: 12px 16px;
   text-decoration: none;
   list-style: none;
   display: block;
 }
-.home-container .header-home .nav .menu li:hover {
+.main-header .nav .menu li:hover {
   background-color: #f1f1f1;
 }
-.home-container .header-home .nav .menu li:hover .sub-menu {
+.main-header .nav .menu li:hover .sub-menu {
   display: flex;
   flex-direction: column;
 }
-.home-container .header-home .nav .menu li a {
+.main-header .nav .menu li a {
   text-decoration: none;
 }
-.home-container .header-home .nav:hover .menu {
+.main-header .nav:hover .menu {
   display: flex;
 }
-.home-container .header-home .nav .sub-menu {
+.main-header .nav .sub-menu {
   display: none;
 }
-.home-container .maincontent {
+.main-header .home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "maincontent" "mainFooder";
+}
+.main-header .maincontent {
   grid-area: maincontent;
   display: flex;
   justify-content: center;
@@ -200,15 +200,16 @@
   font-size: 2rem;
   color: #ffffff;
 }
-.home-container .maincontent h2 {
+.main-header .maincontent h2 {
   text-align: center;
 }
-.home-container .mainFooder {
+
+.mainFooder {
   grid-area: mainFooder;
   margin-top: 1rem;
   text-align: center;
 }
-.home-container .mainFooder i {
+.mainFooder i {
   margin: 1rem;
   color: #bbbab8;
 }
@@ -332,20 +333,53 @@
 .specs-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header" "specs-image" "mainFooder";
+  grid-template-areas: "header" "main-specs" "specs-image" "mainFooder";
 }
 .specs-container .main-specs {
   grid-area: main-specs;
+  margin: 2%;
+  position: relative;
+}
+.specs-container .main-specs .specs-1,
+.specs-container .main-specs .specs-2 {
+  z-index: 1;
+  font-size: 3em;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
+}
+.specs-container .main-specs pre {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+.specs-container .main-specs div {
+  margin: 2rem;
+}
+.specs-container .main-specs div .image-mobile-1 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.specs-container .main-specs div .image-mobile-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 15rem;
+  z-index: 0;
 }
 .specs-container .specs-image {
   grid-area: specs-image;
   overflow: hidden;
   margin: 2rem;
+  display: none;
 }
 .specs-container .specs-image img {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -383,10 +417,7 @@
   .body-entrance .entrancefooder {
     margin-top: 5rem;
   }
-  .home-container {
-    grid-template-rows: 0.1fr 1fr 0.1fr;
-  }
-  .home-container .header-home {
+  .main-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr;
@@ -395,30 +426,34 @@
     grid-template-areas: "signature nav";
     grid-area: header;
   }
-  .home-container .header-home .signature {
+  .main-header .signature {
     align-items: flex-start;
-    margin-left: 15rem;
+    margin-left: 6%;
+    font-size: 1.5em;
   }
-  .home-container .header-home .nav {
+  .main-header .nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 15rem;
-    font-size: 2rem;
+    margin-right: 6%;
+    font-size: 1.5em;
   }
-  .home-container .header-home .nav .dropbtn {
+  .main-header .nav .dropbtn {
     display: none;
   }
-  .home-container .header-home .nav .menu {
+  .main-header .nav .menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
   }
+  .home-container {
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+  }
   .home-container .maincontent {
     align-items: flex-start;
-    margin: 2.5rem 20rem;
-    font-size: 4rem;
+    margin: 2.5rem 10%;
+    font-size: 4em;
     height: 125rem;
   }
   .home-container .maincontent h2 {
@@ -439,17 +474,22 @@
     grid-template-areas: "header header" "sign-up main-about-me-my-image" "main-about-me main-about-me-my-image" "mainFooder mainFooder";
   }
   .about-me-container .sign-up {
-    margin-left: 15rem;
+    margin-left: 8%;
+    margin-right: 2%;
     min-height: 20rem;
     max-height: 30rem;
   }
+  .about-me-container .sign-up .sign-up-header {
+    margin: 1em 1.4em;
+  }
   .about-me-container .sign-up form .sign-up-description {
-    margin: 1.4em 3em;
+    margin: 1.2% 2%;
   }
   .about-me-container .sign-up form .sign-up-input {
     align-items: flex-start;
   }
   .about-me-container .sign-up form .sign-up-input #email {
+    width: 95%;
     height: 3em;
   }
   .about-me-container .sign-up form .sign-up-input #submit {
@@ -457,8 +497,8 @@
   }
   .about-me-container .main-about-me {
     grid-area: main-about-me;
-    margin-left: 15rem;
-    margin-right: 2rem;
+    margin-left: 8%;
+    margin-right: 2%;
   }
   .about-me-container .main-about-me h2 {
     font-weight: 200;
@@ -466,7 +506,7 @@
   .about-me-container .main-about-me-my-image {
     grid-area: main-about-me-my-image;
     overflow: hidden;
-    margin-right: 15rem;
+    margin-right: 8%;
   }
   .portfolio-container {
     display: grid;
@@ -554,11 +594,27 @@
   }
   .specs-container .main-specs {
     grid-area: main-specs;
+    margin-left: 10%;
+  }
+  .specs-container .main-specs .specs-1,
+  .specs-container .main-specs .specs-2 {
+    font-size: 3em;
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+  }
+  .specs-container .main-specs pre {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+  .specs-container .main-specs .image-mobile-1,
+  .specs-container .main-specs .image-mobile-2 {
+    display: none;
   }
   .specs-container .specs-image {
     grid-area: specs-image;
     overflow: hidden;
     margin: 2rem;
+    display: block;
   }
   .specs-container .specs-image img {
     width: 100%;
@@ -580,10 +636,7 @@
   .body-entrance .entrancefooder {
     margin-top: 5rem;
   }
-  .home-container {
-    grid-template-rows: 0.1fr 1fr 0.1fr;
-  }
-  .home-container .header-home {
+  .main-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr;
@@ -592,29 +645,32 @@
     grid-template-areas: "signature nav";
     grid-area: header;
   }
-  .home-container .header-home .signature {
+  .main-header .signature {
     align-items: flex-start;
-    margin-left: 15rem;
+    margin-left: 8%;
   }
-  .home-container .header-home .nav {
+  .main-header .nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 15rem;
+    margin-right: 8%;
     font-size: 2rem;
   }
-  .home-container .header-home .nav .dropbtn {
+  .main-header .nav .dropbtn {
     display: none;
   }
-  .home-container .header-home .nav .menu {
+  .main-header .nav .menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
   }
+  .home-container {
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+  }
   .home-container .maincontent {
     align-items: flex-start;
-    margin: 2.5rem 20rem;
+    margin: 2.5rem 10%;
     font-size: 4rem;
     height: 125rem;
   }
@@ -632,13 +688,17 @@
   }
   .about-me-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.8fr 1fr 0.1fr;
     grid-template-areas: "header header" "sign-up main-about-me-my-image" "main-about-me main-about-me-my-image" "mainFooder mainFooder";
   }
   .about-me-container .sign-up {
-    margin-left: 15rem;
-    min-height: 20rem;
-    max-height: 30rem;
+    margin-left: 10%;
+    margin-right: 2%;
+    min-height: 31rem;
+    max-height: 40rem;
+  }
+  .about-me-container .sign-up .sign-up-header {
+    margin: 1em 1.4em;
   }
   .about-me-container .sign-up form .sign-up-description {
     margin: 1.4em 3em;
@@ -654,8 +714,8 @@
   }
   .about-me-container .main-about-me {
     grid-area: main-about-me;
-    margin-left: 15rem;
-    margin-right: 2rem;
+    margin-left: 10%;
+    margin-right: 2%;
   }
   .about-me-container .main-about-me h2 {
     font-weight: 200;
@@ -663,7 +723,7 @@
   .about-me-container .main-about-me-my-image {
     grid-area: main-about-me-my-image;
     overflow: hidden;
-    margin-right: 15rem;
+    margin-right: 10%;
   }
   .portfolio-container {
     display: grid;
@@ -751,11 +811,27 @@
   }
   .specs-container .main-specs {
     grid-area: main-specs;
+    margin-left: 10%;
+  }
+  .specs-container .main-specs .specs-1,
+  .specs-container .main-specs .specs-2 {
+    font-size: 3em;
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+  }
+  .specs-container .main-specs pre {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+  .specs-container .image-mobile-1,
+  .specs-container .image-mobile-2 {
+    display: none;
   }
   .specs-container .specs-image {
     grid-area: specs-image;
     overflow: hidden;
     margin: 2rem;
+    display: block;
   }
   .specs-container .specs-image img {
     width: 100%;
