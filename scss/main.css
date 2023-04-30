@@ -812,7 +812,7 @@
   }
   .specs-container .main-specs {
     grid-area: main-specs;
-    margin-left: 10%;
+    margin: 10%;
   }
   .specs-container .main-specs .specs-1,
   .specs-container .main-specs .specs-2 {
