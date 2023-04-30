@@ -178,7 +178,8 @@
 .main-header .nav .sub-menu {
   display: none;
 }
-.main-header .home-container {
+
+.home-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 1fr 0.2fr;
@@ -186,7 +187,7 @@
   grid-auto-flow: row;
   grid-template-areas: "header" "maincontent" "mainFooder";
 }
-.main-header .maincontent {
+.home-container .maincontent {
   grid-area: maincontent;
   display: flex;
   justify-content: center;
@@ -200,7 +201,7 @@
   font-size: 2rem;
   color: #ffffff;
 }
-.main-header .maincontent h2 {
+.home-container .maincontent h2 {
   text-align: center;
 }
 
