@@ -4,8 +4,7 @@
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .body-entrance {
     .header-entrance {
-      align-content: center;
-      margin: 2em 0.5em;
+      align-content: flex-start;
       word-spacing: 0.5em;
     }
     .entrance-content {
@@ -26,17 +25,28 @@
     grid-auto-flow: row;
     grid-template-areas: "signature nav";
     grid-area: header;
+
     .signature {
       align-items: flex-start;
       margin-left: 6%;
-      font-size: 1.5em;
+      height: 15vh;
+      position: relative;
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        position: absolute;
+        margin-top: 4em;
+        margin-left: 2em;
+        font-size: 1.1rem;
+      }
     }
     .nav {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       margin-right: 6%;
-      font-size: 1.5em;
+      font-size: 1.2em;
       .dropbtn {
         display: none;
       }
@@ -53,21 +63,21 @@
 
     .maincontent {
       align-items: flex-start;
-      margin: 2.5rem 10%;
-      font-size: 4em;
+      margin: 0 10%;
+      font-size: 4rem;
       height: 125rem;
       h2 {
         margin-top: 35rem;
       }
     }
-    .mainFooder {
-      margin-top: 10rem;
-      margin-left: 20rem;
-      text-align: left;
-      i {
-        margin: 1rem;
-        color: $color_3;
-      }
+  }
+  .mainFooder {
+    margin-top: 10rem;
+    margin-left: 20rem;
+    text-align: left;
+    i {
+      margin: 1rem;
+      color: $color_3;
     }
   }
 
@@ -135,28 +145,20 @@
       "mainFooder mainFooder";
     .portfolio-images {
       grid-area: portfolio-images;
-      position: relative;
-      width: 100%;
-      height: 80vh;
+      display: flex;
+      align-items: center;
       overflow: hidden;
-      .slideshow__container {
-        position: relative;
-        width: 300%; /* adjusts width to accommodate 12 images */
-        height: 100%;
-        left: 0;
-        top: 0;
-        display: flex;
-        flex-direction: row;
-        .slideshow__item {
-          position: relative;
-          flex: 1;
-          width: 20%; /* width of each image is 25% of the total width */
-          height: 80vh;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          animation: slide 60s infinite; /* adjusts duration to accommodate 12 images*/
-        }
+      margin: 10%;
+      position: relative;
+    }
+
+    .slideshow__container {
+      width: 100%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      .slideshow__item {
+        padding: 0.5rem 0;
       }
     }
     /* Animations for the 12 images */
@@ -250,8 +252,7 @@
 @media screen and (min-width: 1024px) {
   .body-entrance {
     .header-entrance {
-      align-content: center;
-      margin: 2em 0.5em;
+      align-content: flex-start;
       word-spacing: 0.5em;
     }
     .entrance-content {
@@ -272,16 +273,27 @@
     grid-auto-flow: row;
     grid-template-areas: "signature nav";
     grid-area: header;
+
     .signature {
       align-items: flex-start;
+      height: 15vh;
       margin-left: 8%;
+      h2 {
+        font-size: 5em;
+      }
+      p {
+        position: absolute;
+        margin-top: 4em;
+        margin-left: 2.5em;
+        font-size: 1.4em;
+      }
     }
     .nav {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       margin-right: 8%;
-      font-size: 2rem;
+      font-size: 1.2rem;
       .dropbtn {
         display: none;
       }
@@ -298,21 +310,22 @@
 
     .maincontent {
       align-items: flex-start;
-      margin: 2.5rem 10%;
+      margin: 0 10%;
       font-size: 4rem;
       height: 125rem;
       h2 {
         margin-top: 35rem;
       }
     }
-    .mainFooder {
-      margin-top: 10rem;
-      margin-left: 20rem;
-      text-align: left;
-      i {
-        margin: 1rem;
-        color: $color_3;
-      }
+  }
+  .mainFooder {
+    margin-top: 10rem;
+    margin-left: 20rem;
+    text-align: left;
+    i {
+      font-size: 1.5em;
+      margin: 1em;
+      color: $color_3;
     }
   }
 
