@@ -28,7 +28,7 @@
 }
 
 .body-entrance {
-  background: url(../images/IMG_2605.webp);
+  background: url(../images/body_backgroud.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -48,7 +48,7 @@
   align-content: center;
   justify-content: center;
   margin: 0;
-  background: url(../images/header_background.png);
+  background: url(../images/body_header_background.webp);
   background-repeat: no-repeat;
   height: 120px;
   background-size: cover;
@@ -57,7 +57,7 @@
   align-content: flex-start;
 }
 .body-entrance .header-entrance h2 {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 .body-entrance .entrance-content {
@@ -218,7 +218,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../images/IMG_2499-a.webp);
+  background: url(../images/home_maincontent.background.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;

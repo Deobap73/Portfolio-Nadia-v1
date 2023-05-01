@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 .body-entrance {
-  background: url(../images/IMG_2605.webp);
+  background: $background_1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -21,16 +21,15 @@
     "header-entrance"
     "maincontent"
     "mainFooder";
-    .header-entrance {
-
-      grid-area: header-entrance;
+  .header-entrance {
+    grid-area: header-entrance;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     margin: 0;
-    background: url(../images/header_background.png);
+    background: $background_2;
     background-repeat: no-repeat;
     height: 120px;
     background-size: cover;
@@ -38,7 +37,7 @@
     z-index: 2000;
     align-content: flex-start;
     h2 {
-      color: $color_2;
+      color: $color_1;
       text-align: center;
     }
   }
@@ -206,7 +205,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/IMG_2499-a.webp);
+    background: $background_3;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -217,7 +216,7 @@
     color: $color_1;
     h2 {
       font-family: "Comforter", cursive;
-      letter-spacing: .5em;
+      letter-spacing: 0.5em;
       text-align: center;
     }
   }
