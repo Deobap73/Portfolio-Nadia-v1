@@ -14,7 +14,7 @@ First training project in WEB Development, at the Digital Career Institute - DCI
 
 ## PROGRAMMING LINGUAGES USED
 - HTML
-- SASS
+- SCSS
 
 
 ## THINGS THAT WILL BE ADDED IN FUTURE VERSIONS
