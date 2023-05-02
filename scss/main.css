@@ -528,99 +528,126 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.trophies-container .trophies-slider .Trophy .item h1 {
-  font-size: 114px;
-  color: #ffffff;
+.trophies-container .trophies-slider .Trophy-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 10vh;
+  perspective: 1000px;
+  overflow: hidden;
 }
-.trophies-container #t-1:checked ~ .Trophy label[for=t-3] {
+.trophies-container .trophies-slider .Trophy-description .item {
+  width: 18.75em;
+  min-height: 5.875em;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #282d34;
+  position: absolute;
+  border: 3px solid white;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.trophies-container .trophies-slider .Trophy-description .item h2 {
+  position: absolute;
+}
+.trophies-container #t-1:checked ~ .Trophy label[for=t-3], .trophies-container #t-1:checked ~ .Trophy-description label[for=t-3] {
   transform: translate3d(600px, 0, -180px) rotateY(-25deg);
   z-index: 2;
 }
-.trophies-container #t-1:checked ~ .Trophy label[for=t-2] {
+.trophies-container #t-1:checked ~ .Trophy label[for=t-2], .trophies-container #t-1:checked ~ .Trophy-description label[for=t-2] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
 }
-.trophies-container #t-1:checked ~ .Trophy label[for=t-5] {
+.trophies-container #t-1:checked ~ .Trophy label[for=t-5], .trophies-container #t-1:checked ~ .Trophy-description label[for=t-5] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
 }
-.trophies-container #t-1:checked ~ .Trophy label[for=t-4] {
+.trophies-container #t-1:checked ~ .Trophy label[for=t-4], .trophies-container #t-1:checked ~ .Trophy-description label[for=t-4] {
   transform: translate3d(-600px, 0, -180px) rotateY(25deg);
 }
-.trophies-container #t-1:checked ~ .Trophy label[for=t-1] {
+.trophies-container #t-1:checked ~ .Trophy label[for=t-1], .trophies-container #t-1:checked ~ .Trophy-description label[for=t-1] {
   z-index: 4;
 }
-.trophies-container #t-2:checked ~ .Trophy label[for=t-4] {
+.trophies-container #t-2:checked ~ .Trophy label[for=t-4], .trophies-container #t-2:checked ~ .Trophy-description label[for=t-4] {
   transform: translate3d(600px, 0, -180px) rotateY(-25deg);
   z-index: 2;
 }
-.trophies-container #t-2:checked ~ .Trophy label[for=t-3] {
+.trophies-container #t-2:checked ~ .Trophy label[for=t-3], .trophies-container #t-2:checked ~ .Trophy-description label[for=t-3] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
 }
-.trophies-container #t-2:checked ~ .Trophy label[for=t-1] {
+.trophies-container #t-2:checked ~ .Trophy label[for=t-1], .trophies-container #t-2:checked ~ .Trophy-description label[for=t-1] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
 }
-.trophies-container #t-2:checked ~ .Trophy label[for=t-5] {
+.trophies-container #t-2:checked ~ .Trophy label[for=t-5], .trophies-container #t-2:checked ~ .Trophy-description label[for=t-5] {
   transform: translate3d(-600px, 0, -180px) rotateY(25deg);
 }
-.trophies-container #t-2:checked ~ .Trophy label[for=t-2] {
+.trophies-container #t-2:checked ~ .Trophy label[for=t-2], .trophies-container #t-2:checked ~ .Trophy-description label[for=t-2] {
   z-index: 4;
 }
-.trophies-container #t-3:checked ~ .Trophy label[for=t-5] {
+.trophies-container #t-3:checked ~ .Trophy label[for=t-5], .trophies-container #t-3:checked ~ .Trophy-description label[for=t-5] {
   transform: translate3d(600px, 0, -180px) rotateY(-25deg);
   z-index: 2;
 }
-.trophies-container #t-3:checked ~ .Trophy label[for=t-4] {
+.trophies-container #t-3:checked ~ .Trophy label[for=t-4], .trophies-container #t-3:checked ~ .Trophy-description label[for=t-4] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
 }
-.trophies-container #t-3:checked ~ .Trophy label[for=t-2] {
+.trophies-container #t-3:checked ~ .Trophy label[for=t-2], .trophies-container #t-3:checked ~ .Trophy-description label[for=t-2] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
 }
-.trophies-container #t-3:checked ~ .Trophy label[for=t-1] {
+.trophies-container #t-3:checked ~ .Trophy label[for=t-1], .trophies-container #t-3:checked ~ .Trophy-description label[for=t-1] {
   transform: translate3d(-600px, 0, -180px) rotateY(25deg);
 }
-.trophies-container #t-3:checked ~ .Trophy label[for=t-3] {
+.trophies-container #t-3:checked ~ .Trophy label[for=t-3], .trophies-container #t-3:checked ~ .Trophy-description label[for=t-3] {
   z-index: 4;
 }
-.trophies-container #t-4:checked ~ .Trophy label[for=t-1] {
+.trophies-container #t-4:checked ~ .Trophy label[for=t-1], .trophies-container #t-4:checked ~ .Trophy-description label[for=t-1] {
   transform: translate3d(600px, 0, -180px) rotateY(-25deg);
   z-index: 2;
 }
-.trophies-container #t-4:checked ~ .Trophy label[for=t-5] {
+.trophies-container #t-4:checked ~ .Trophy label[for=t-5], .trophies-container #t-4:checked ~ .Trophy-description label[for=t-5] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
 }
-.trophies-container #t-4:checked ~ .Trophy label[for=t-3] {
+.trophies-container #t-4:checked ~ .Trophy label[for=t-3], .trophies-container #t-4:checked ~ .Trophy-description label[for=t-3] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
 }
-.trophies-container #t-4:checked ~ .Trophy label[for=t-2] {
+.trophies-container #t-4:checked ~ .Trophy label[for=t-2], .trophies-container #t-4:checked ~ .Trophy-description label[for=t-2] {
   transform: translate3d(-600px, 0, -180px) rotateY(25deg);
 }
-.trophies-container #t-4:checked ~ .Trophy label[for=t-4] {
+.trophies-container #t-4:checked ~ .Trophy label[for=t-4], .trophies-container #t-4:checked ~ .Trophy-description label[for=t-4] {
   z-index: 4;
 }
-.trophies-container #t-5:checked ~ .Trophy label[for=t-2] {
+.trophies-container #t-5:checked ~ .Trophy label[for=t-2], .trophies-container #t-5:checked ~ .Trophy-description label[for=t-2] {
   transform: translate3d(600px, 0, -180px) rotateY(-25deg);
   z-index: 2;
 }
-.trophies-container #t-5:checked ~ .Trophy label[for=t-1] {
+.trophies-container #t-5:checked ~ .Trophy label[for=t-1], .trophies-container #t-5:checked ~ .Trophy-description label[for=t-1] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
 }
-.trophies-container #t-5:checked ~ .Trophy label[for=t-4] {
+.trophies-container #t-5:checked ~ .Trophy label[for=t-4], .trophies-container #t-5:checked ~ .Trophy-description label[for=t-4] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
   z-index: 4;
 }
-.trophies-container #t-5:checked ~ .Trophy label[for=t-3] {
+.trophies-container #t-5:checked ~ .Trophy label[for=t-3], .trophies-container #t-5:checked ~ .Trophy-description label[for=t-3] {
   transform: translate3d(-600px, 0, -180px) rotateY(25deg);
 }
-.trophies-container #t-5:checked ~ .Trophy label[for=t-5] {
+.trophies-container #t-5:checked ~ .Trophy label[for=t-5], .trophies-container #t-5:checked ~ .Trophy-description label[for=t-5] {
   z-index: 4;
 }
 
@@ -1125,6 +1152,6 @@
        object-fit: cover;
   }
   .trophies-container .trophies-slider .Trophy .item {
-    min-height: 21.875em;
+    min-height: 15.875em;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -200,7 +200,6 @@
         &:hover .sub-menu {
           display: flex;
           flex-direction: column;
-          
         }
         a {
           text-decoration: none;
@@ -261,8 +260,7 @@
       font-size: 1em;
       letter-spacing: 0.5em;
       text-align: center;
-      text-shadow: -1px -1px 1px #ffffff1a,
-      1px 1px 1px #00000080;
+      text-shadow: -1px -1px 1px #ffffff1a, 1px 1px 1px #00000080;
     }
   }
 }
@@ -531,9 +529,35 @@
           height: 100%;
           object-fit: cover;
         }
-        h1 {
-          font-size: 114px;
-          color: $color_1;
+      }
+    }
+    .Trophy-description {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      min-height: 10vh;
+      perspective: 1000px;
+      overflow: hidden;
+      .item {
+        width: 18.75em;
+        min-height: 5.875em;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: $background-color_4;
+        position: absolute;
+        border: 3px solid white;
+        top: 0;
+        box-sizing: border-box;
+        text-align: center;
+        transition: transform 0.4s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        user-select: none;
+        overflow: hidden;
+        cursor: pointer;
+        h2 {
+          position: absolute;
+          
         }
       }
     }
@@ -542,7 +566,7 @@
   #t-1 {
     &:checked {
       ~ {
-        .Trophy {
+        .Trophy, .Trophy-description {
           label[for="t-3"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
@@ -568,7 +592,7 @@
   #t-2 {
     &:checked {
       ~ {
-        .Trophy {
+        .Trophy, .Trophy-description {
           label[for="t-4"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
@@ -594,7 +618,7 @@
   #t-3 {
     &:checked {
       ~ {
-        .Trophy {
+        .Trophy, .Trophy-description {
           label[for="t-5"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
@@ -620,7 +644,7 @@
   #t-4 {
     &:checked {
       ~ {
-        .Trophy {
+        .Trophy, .Trophy-description {
           label[for="t-1"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
@@ -646,7 +670,7 @@
   #t-5 {
     &:checked {
       ~ {
-        .Trophy {
+        .Trophy, .Trophy-description {
           label[for="t-2"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
