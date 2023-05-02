@@ -1,6 +1,5 @@
 @import "colors";
 @import "fonts";
-
 * {
   margin: 0;
   padding: 0;
@@ -86,24 +85,24 @@
     justify-content: space-evenly;
     margin: 0 0.5em;
     h1 {
-      margin-top: 12.5rem;
+      margin-top: 12.5em;
       text-align: center;
       font-size: 2.5em;
-      letter-spacing: 1.5rem;
+      letter-spacing: 1.5em;
     }
     p {
-      font-size: 1.5rem;
-      margin: 2rem 0;
-      word-spacing: 2rem;
+      font-size: 1.5em;
+      margin: 2em 0;
+      word-spacing: 2em;
     }
     button {
-      width: 100px;
-      height: 45px;
+      width: 6.25rem;
+      height: 2.875rem;
       border: 3px solid $color_1;
       color: $color_1;
       background-color: $background-color_1;
       a {
-        font-size: 1.2rem;
+        font-size: 1.2em;
         font-weight: 600;
         letter-spacing: 0.2rem;
         text-decoration: none;
@@ -137,21 +136,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 3rem;
-      width: 3rem;
+      height: 3em;
+      width: 3em;
       border-radius: 50%;
     }
     .fa-brands {
-      font-size: 1.5rem;
+      font-size: 1.5em;
       color: $color_3;
       background-color: $background-color_2;
       text-align: center;
     }
   }
 }
-
 // style from home-1 page
-
 .main-header {
   grid-area: header;
   display: grid;
@@ -169,10 +166,10 @@
     justify-content: center;
     height: 25vh;
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.5em;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1.2em;
     }
   }
   .nav {
@@ -183,9 +180,9 @@
       font-size: 1em;
       border: none;
       width: 100vw;
-      height: 4rem;
+      height: 4em;
       cursor: pointer;
-      font-size: 3rem;
+      font-size: 3em;
     }
     .menu {
       display: none;
@@ -224,8 +221,8 @@
     .sub-menu {
       display: none;
       position: absolute;
-      right: 100px;
-      width: 200px;
+      right: 6.25em;
+      width: 12.5em;
     }
   }
 }
@@ -269,13 +266,11 @@
   margin-top: 1rem;
   text-align: center;
   i {
-    margin: 1rem;
+    margin: 1em;
     color: $color_3;
   }
 }
-
 // about me page
-
 .about-me-container {
   display: grid;
   grid-template-columns: 0.5fr;
@@ -303,7 +298,7 @@
       align-items: center;
       width: 100%;
       .sign-up-header {
-        font-size: 2rem;
+        font-size: 2em;
         text-align: center;
         margin: 1.4em 1.4em;
       }
@@ -313,17 +308,16 @@
         margin: 1.4em 1.4em;
         text-align: center;
       }
-
       .sign-up-input {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin: 2rem 0;
+        margin: 2em 0;
 
         #email {
-          min-width: 18rem;
-          margin-bottom: 2rem;
+          min-width: 18em;
+          margin-bottom: 2em;
           background: #fdfcfb;
           font-family: inherit;
           color: $color_3;
@@ -340,14 +334,13 @@
           font-weight: bold;
           color: $color_1;
           letter-spacing: 1px;
-          border-radius: 0.5rem;
+          border-radius: 0.5em;
           cursor: pointer;
           transition: background 0.3s ease-in-out;
           &:hover {
             background: #000000;
           }
         }
-
         input:focus {
           outline: none;
         }
@@ -382,7 +375,6 @@
   }
 }
 // Portfolio style page
-
 .portfolio-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -409,12 +401,11 @@
     display: flex;
     flex-direction: column;
     .slideshow__item {
-      padding: 0.5rem 0;
+      padding: 0.5em 0;
     }
   }
 }
 // specs style page
-
 .specs-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -454,7 +445,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        margin-top: 18rem;
+        margin-top: 18em;
         z-index: 0;
       }
     }
@@ -473,9 +464,7 @@
     }
   }
 }
-
 // Trophies page style
-
 .trophies-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -503,12 +492,12 @@
       justify-content: center;
       position: relative;
       min-height: 40vh;
-      perspective: 1000px;
+      perspective: 26.5rem;
       overflow: hidden;
       .item {
         width: 18.75em;
         min-height: 15.875em;
-        padding: 30px;
+        padding: 1.875em;
         border-radius: 5px;
         background-color: $background-color_1;
         position: absolute;
@@ -537,7 +526,7 @@
       justify-content: center;
       position: relative;
       min-height: 10vh;
-      perspective: 1000px;
+      perspective: 6.5rem;
       overflow: hidden;
       .item {
         width: 18.75em;
@@ -557,33 +546,38 @@
         cursor: pointer;
         h2 {
           position: absolute;
-          
         }
       }
     }
   }
-
   #t-1 {
     &:checked {
       ~ {
-        .Trophy, .Trophy-description {
+        .Trophy,
+        .Trophy-description {
           label[for="t-3"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
+            color: $color_3;
           }
           label[for="t-2"] {
             transform: translate3d(300px, 0, -90px) rotateY(-15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-5"] {
             transform: translate3d(-300px, 0, -90px) rotateY(15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-4"] {
             transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+            color: $color_3;
           }
           label[for="t-1"] {
             z-index: 4;
+            color: $color_2;
+            background-color: $background-color_2;
           }
         }
       }
@@ -592,24 +586,31 @@
   #t-2 {
     &:checked {
       ~ {
-        .Trophy, .Trophy-description {
+        .Trophy,
+        .Trophy-description {
           label[for="t-4"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
+            color: $color_3;
           }
           label[for="t-3"] {
             transform: translate3d(300px, 0, -90px) rotateY(-15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-1"] {
             transform: translate3d(-300px, 0, -90px) rotateY(15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-5"] {
             transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+            color: $color_3;
           }
           label[for="t-2"] {
             z-index: 4;
+            color: $color_2;
+            background-color: $background-color_2;
           }
         }
       }
@@ -618,24 +619,31 @@
   #t-3 {
     &:checked {
       ~ {
-        .Trophy, .Trophy-description {
+        .Trophy,
+        .Trophy-description {
           label[for="t-5"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
+            color: $color_3;
           }
           label[for="t-4"] {
             transform: translate3d(300px, 0, -90px) rotateY(-15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-2"] {
             transform: translate3d(-300px, 0, -90px) rotateY(15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-1"] {
             transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+            color: $color_3;
           }
           label[for="t-3"] {
             z-index: 4;
+            color: $color_2;
+            background-color: $background-color_2;
           }
         }
       }
@@ -644,24 +652,31 @@
   #t-4 {
     &:checked {
       ~ {
-        .Trophy, .Trophy-description {
+        .Trophy,
+        .Trophy-description {
           label[for="t-1"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
+            color: $color_3;
           }
           label[for="t-5"] {
             transform: translate3d(300px, 0, -90px) rotateY(-15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-3"] {
             transform: translate3d(-300px, 0, -90px) rotateY(15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-2"] {
             transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+            color: $color_3;
           }
           label[for="t-4"] {
             z-index: 4;
+            color: $color_2;
+            background-color: $background-color_2;
           }
         }
       }
@@ -670,30 +685,36 @@
   #t-5 {
     &:checked {
       ~ {
-        .Trophy, .Trophy-description {
+        .Trophy,
+        .Trophy-description {
           label[for="t-2"] {
             transform: translate3d(600px, 0, -180px) rotateY(-25deg);
             z-index: 2;
+            color: $color_3;
           }
           label[for="t-1"] {
             transform: translate3d(300px, 0, -90px) rotateY(-15deg);
             z-index: 3;
+            color: $color_3;
           }
           label[for="t-4"] {
             transform: translate3d(-300px, 0, -90px) rotateY(15deg);
             z-index: 3;
             z-index: 4;
+            color: $color_3;
           }
           label[for="t-3"] {
             transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+            color: $color_3;
           }
           label[for="t-5"] {
             z-index: 4;
+            color: $color_2;
+            background-color: $background-color_2;
           }
         }
       }
     }
   }
 }
-
 @import "style-rules";
