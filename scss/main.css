@@ -14,6 +14,7 @@
 .entrance-content h1 {
   font-family: "Comforter", cursive;
   color: #ffffff;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1019607843), 1px 1px 1px rgba(0, 0, 0, 0.5019607843);
 }
 
 .signature h2 {
@@ -54,14 +55,16 @@
   margin: 0;
   background: url(../images/body_header_background.webp);
   background-repeat: no-repeat;
-  height: 120px;
+  height: 7.5rem;
   background-size: cover;
   background-position: center center;
   z-index: 2000;
   align-content: flex-start;
+  align-items: center;
 }
 .body-entrance .header-entrance h2 {
   color: #ffffff;
+  font-size: 1em;
   text-align: center;
 }
 .body-entrance .header-entrance .header-signature {
@@ -71,6 +74,7 @@
 .body-entrance .header-entrance .header-nav {
   grid-area: header-nav;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -105,8 +109,8 @@
 .body-entrance .entrance-content h1 {
   margin-top: 12.5rem;
   text-align: center;
-  font-size: 3em;
-  letter-spacing: 2rem;
+  font-size: 2.5em;
+  letter-spacing: 1.5rem;
 }
 .body-entrance .entrance-content p {
   font-size: 1.5rem;
@@ -261,15 +265,17 @@
   background-repeat: no-repeat;
   background-position: top center;
   border: 2px solid #ffffff;
-  margin: 0 2rem;
+  margin: 0 6%;
   height: 100vh;
   font-size: 2rem;
   color: #ffffff;
 }
 .home-container .maincontent h2 {
   font-family: "Comforter", cursive;
+  font-size: 1em;
   letter-spacing: 0.5em;
   text-align: center;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1019607843), 1px 1px 1px rgba(0, 0, 0, 0.5019607843);
 }
 
 .mainFooder {
@@ -630,6 +636,7 @@
 .entrance-content h1 {
   font-family: "Comforter", cursive;
   color: #ffffff;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1019607843), 1px 1px 1px rgba(0, 0, 0, 0.5019607843);
 }
 
 .signature h2 {
@@ -641,6 +648,9 @@
   .body-entrance .header-entrance {
     align-content: flex-start;
     word-spacing: 0.5em;
+  }
+  .body-entrance .header-entrance .header-nav {
+    flex-direction: row;
   }
   .body-entrance .header-entrance .header-nav a {
     font-size: 1.1rem;
@@ -875,6 +885,9 @@
     align-content: flex-start;
     word-spacing: 0.5em;
   }
+  .body-entrance .header-entrance .header-nav {
+    flex-direction: row;
+  }
   .body-entrance .header-entrance .header-nav a {
     font-size: 1.1rem;
   }
@@ -923,6 +936,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+  }
+  .main-header .nav .sub-menu {
+    right: 100px;
   }
   .home-container {
     grid-template-rows: 0.1fr 1fr 0.1fr;
@@ -1002,6 +1018,7 @@
     position: relative;
     width: 100%;
     height: 80vh;
+    margin-top: 2%;
     overflow: hidden;
   }
   .portfolio-container .portfolio-images .slideshow__container {
@@ -1063,6 +1080,11 @@
     100% {
       transform: translateX(-600%);
     }
+  }
+  .portfolio-container .mainFooder {
+    margin-top: 4rem;
+    margin-left: 20rem;
+    text-align: left;
   }
   .specs-container {
     display: grid;

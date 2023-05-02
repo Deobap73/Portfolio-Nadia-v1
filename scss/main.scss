@@ -35,13 +35,15 @@
     margin: 0;
     background: $background_2;
     background-repeat: no-repeat;
-    height: 120px;
+    height: 7.5rem;
     background-size: cover;
     background-position: center center;
     z-index: 2000;
     align-content: flex-start;
+    align-items: center;
     h2 {
       color: $color_1;
+      font-size: 1em;
       text-align: center;
     }
     .header-signature {
@@ -51,6 +53,7 @@
     .header-nav {
       grid-area: header-nav;
       display: flex;
+      flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       a {
@@ -85,8 +88,8 @@
     h1 {
       margin-top: 12.5rem;
       text-align: center;
-      font-size: 3em;
-      letter-spacing: 2rem;
+      font-size: 2.5em;
+      letter-spacing: 1.5rem;
     }
     p {
       font-size: 1.5rem;
@@ -197,6 +200,7 @@
         &:hover .sub-menu {
           display: flex;
           flex-direction: column;
+          
         }
         a {
           text-decoration: none;
@@ -222,7 +226,6 @@
       display: none;
       position: absolute;
       right: 100px;
-
       width: 200px;
     }
   }
@@ -249,14 +252,17 @@
     background-repeat: no-repeat;
     background-position: top center;
     border: 2px solid $color_1;
-    margin: 0 2rem;
+    margin: 0 6%;
     height: 100vh;
     font-size: 2rem;
     color: $color_1;
     h2 {
       font-family: "Comforter", cursive;
+      font-size: 1em;
       letter-spacing: 0.5em;
       text-align: center;
+      text-shadow: -1px -1px 1px #ffffff1a,
+      1px 1px 1px #00000080;
     }
   }
 }
