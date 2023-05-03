@@ -1036,7 +1036,7 @@
   }
   .home-container {
     grid-template-rows: 0.1fr 0.6fr 0.1fr;
-    height: 125vh;
+    height: 128vh;
   }
   .home-container .maincontent {
     align-items: flex-start;
