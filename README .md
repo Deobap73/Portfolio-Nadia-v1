@@ -1,6 +1,8 @@
 # Profile-Nadia-v1
 First training project in WEB Development, at the Digital Career Institute - DCI
 
+![My Image](./images/Screenshot.png)
+
 - My first presentation project in the course of WEB Development Digital Career Institute - DCI.
 - Main objective to express my current knowledge after two months of continuous training, as well as my work style and solutions with which I feel comfortable.
 - This Portfolio consists of...
@@ -14,7 +16,7 @@ First training project in WEB Development, at the Digital Career Institute - DCI
 
 ## PROGRAMMING LINGUAGES USED
 - HTML
-- SCSS
+- SASS
 
 
 ## THINGS THAT WILL BE ADDED IN FUTURE VERSIONS
