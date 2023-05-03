@@ -137,7 +137,7 @@
   color: #ffffff;
 }
 .body-entrance .entrance-content button a:hover {
-  color: #000000;
+  color: #282d34;
 }
 .body-entrance .entrance-content button a:active {
   color: #ffffff;
@@ -308,7 +308,7 @@
   min-height: 39rem;
   margin: 2rem;
   background-color: #bbbab8;
-  color: #000000;
+  color: #282d34;
 }
 .about-me-container .sign-up form {
   display: flex;
@@ -589,7 +589,7 @@
 .trophies-container #t-1:checked ~ .Trophy label[for=t-1],
 .trophies-container #t-1:checked ~ .Trophy-description label[for=t-1] {
   z-index: 4;
-  color: #000000;
+  color: #282d34;
   background-color: #ffffff;
 }
 .trophies-container #t-2:checked ~ .Trophy label[for=t-4],
@@ -618,7 +618,7 @@
 .trophies-container #t-2:checked ~ .Trophy label[for=t-2],
 .trophies-container #t-2:checked ~ .Trophy-description label[for=t-2] {
   z-index: 4;
-  color: #000000;
+  color: #282d34;
   background-color: #ffffff;
 }
 .trophies-container #t-3:checked ~ .Trophy label[for=t-5],
@@ -647,7 +647,7 @@
 .trophies-container #t-3:checked ~ .Trophy label[for=t-3],
 .trophies-container #t-3:checked ~ .Trophy-description label[for=t-3] {
   z-index: 4;
-  color: #000000;
+  color: #282d34;
   background-color: #ffffff;
 }
 .trophies-container #t-4:checked ~ .Trophy label[for=t-1],
@@ -676,7 +676,7 @@
 .trophies-container #t-4:checked ~ .Trophy label[for=t-4],
 .trophies-container #t-4:checked ~ .Trophy-description label[for=t-4] {
   z-index: 4;
-  color: #000000;
+  color: #282d34;
   background-color: #ffffff;
 }
 .trophies-container #t-5:checked ~ .Trophy label[for=t-2],
@@ -706,7 +706,7 @@
 .trophies-container #t-5:checked ~ .Trophy label[for=t-5],
 .trophies-container #t-5:checked ~ .Trophy-description label[for=t-5] {
   z-index: 4;
-  color: #000000;
+  color: #282d34;
   background-color: #ffffff;
 }
 
